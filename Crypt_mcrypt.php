@@ -6,7 +6,7 @@
  * Time: 12:48 AM
  */
 
-class Crypt{
+class CryptMcrypt{
     private $hash;
 
     function __construct($hash){
