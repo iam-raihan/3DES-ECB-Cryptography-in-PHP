@@ -7,13 +7,13 @@
  */
 
 require_once <<<'include'
-Crypt.php
+Crypt_openssl.php
 include;
 
 if (!empty($_POST["hash"])) {
     $hash = $_POST["hash"];
     echo "Hash = <b>{$hash}</b>";
-    $crypt = new Crypt($hash);
+    $crypt = new CryptOpenssl($hash);
 
     if (!empty($_POST["data"])) {
         $data = $_POST["data"];
